@@ -63,7 +63,7 @@ body, html{
     text-transform: uppercase;
 }
 
-.text .border{
+.text, .text2 .border{
     background-color: #111;
     color: white;
     padding: 20px;
