@@ -63,7 +63,14 @@ body, html{
     text-transform: uppercase;
 }
 
-.text, .text2 .border{
+.text .border{
+    background-color: #111;
+    color: white;
+    padding: 20px;
+    opacity: 0.8;
+}
+
+.text2 .border{
     background-color: #111;
     color: white;
     padding: 20px;
