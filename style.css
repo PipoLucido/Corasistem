@@ -96,7 +96,7 @@ body, html{
    
    .cards {
        display : inline-flex;
-       
+       flex-warp : warp;
        margin: 0;
        padding: 0;
        align-content: center;
