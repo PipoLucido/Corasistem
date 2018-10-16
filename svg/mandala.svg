@@ -6,48 +6,64 @@
 			.capa01
 			{
 				animation: capa01 600s infinite;
+				-webkit-animation: capa01 600s infinite;
+				-moz-animation: capa01 600s infinite;
 				transform-origin: 50% 50%
 			}
 
 			.capa02
 			{
 				animation: capa01 430s infinite;
+				-webkit-animation: capa01 430s infinite;
+				-moz-animation: capa01 430s infinite;
 				transform-origin: 50% 50%
 			}
 
 			.capa03
 			{
 				animation: capa03 500s infinite;
+				-webkit-animation: capa03 500s infinite;
+				-moz-animation: capa03 500s infinite;
 				transform-origin: 50% 50%
 			}
 
 			.capa04
 			{
 				animation: capa01 400s infinite;
+				-webkit-animation: capa01 400s infinite;
+				-moz-animation: capa01 400s infinite;
 				transform-origin: 50% 50%
 			}
 
 			.capa05
 			{
 				animation: capa05 190s infinite;
+				-webkit-animation: capa05 190s infinite;
+				-moz-animation: capa05 190s infinite;
 				transform-origin: 50% 50%
 			}
 
 			.capa06
 			{
 				animation: capa01 500s infinite;
+				-webkit-animation: capa01 500s infinite;
+				-moz-animation: capa01 500s infinite;
 				transform-origin: 50% 50%
 			}
 
 			.capa07
 			{
 				animation: capa01 350s infinite;
+				-webkit-animation: capa01 350s infinite;
+				-moz-animation: capa01 350s infinite;
 				transform-origin: 50% 50%
 			}
 
 			.capa08
 			{
 				animation: capa01 600s infinite;
+				-webkit-animation: capa01 600s infinite;
+				-moz-animation: capa01 600s infinite;
 				transform-origin: 50% 50%
 			}
 
@@ -64,6 +80,44 @@
 			}
 
 			@keyframes capa05 {
+				to{
+				transform: rotate(-6turn)
+				}
+			}
+			
+			
+			@-webkit-keyframes capa05 {
+				to{
+				transform: rotate(-6turn)
+				}
+			}
+			
+			
+			@-webkit-keyframes capa03 {
+				to{
+				transform: rotate(-6turn)
+				}
+			}
+			
+			@-webkit-keyframes capa01 {
+				to{
+				transform: rotate(6turn)
+				}
+			}
+			
+			@-moz-keyframes capa01 {
+				to{
+				transform: rotate(6turn)
+				}
+			}
+			
+			@-moz-keyframes capa03 {
+				to{
+				transform: rotate(-6turn)
+				}
+			}
+			
+			@-moz-keyframes capa05 {
 				to{
 				transform: rotate(-6turn)
 				}
