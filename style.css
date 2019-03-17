@@ -1,0 +1,127 @@
+body{
+    margin:0;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+
+.videoFondo{
+position: absolute;
+width: 100%;
+top: -55px;
+}
+
+.contenido{
+    position: absolute;
+   
+    color: azure;
+    font-family: 'Press Start 2P', cursive;
+   padding: 15px;
+   
+    background-color: black;
+    opacity: 0.81;
+    margin: 25px;
+}
+
+.contenido h1{
+    overflow: hidden; 
+  border-right: .15em solid azure;
+  white-space: nowrap;
+  
+  
+    animation: 
+    typing 1.0s steps(40, end),
+    blink-caret .4s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+  
+  
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: azure; }
+}
+
+.intel{
+    position: absolute;
+    top: 195px;
+    left: 25px;
+    color: azure;
+    background-color: black;
+    opacity: 0.85;
+    font-family: 'Press Start 2P', cursive;
+    padding: 5px;
+}
+
+.redes{
+   position: absolute;
+   font-size: 35px;
+   right: 15px;
+   top: 5px;
+    color: azure;
+    
+    z-index: 99;
+}
+
+.redes i{
+   padding-right:15px; 
+    opacity: 0.85;
+    cursor: pointer;
+}
+
+.redes i:hover{
+    opacity: 1;
+}
+
+.videoYoutube{
+    position: absolute;
+    bottom: 25px;
+    right: 25px;
+}
+
+.menu{
+    position: relative;
+    color: beige;
+    top: 15px;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.menu i{
+    position: relative;
+    color: beige;
+    top: 305px;
+    left: 25px;
+    font-family: 'Press Start 2P', cursive;
+    cursor: pointer;
+    opacity: 0.81;
+}
+
+.menu i:hover{
+    opacity: 1;
+    font-style: normal;
+}
+
+#contenidoSeleccionado{
+    position: relative;
+    color: beige;
+    top: 315px;
+    left: 28px;
+    width: 500px;
+    height: 220px;
+    overflow-y: scroll;
+    font-family: 'Ubuntu Mono', monospace;
+    text-align: center;
+}
+
+#contenidoSeleccionado::-webkit-scrollbar{
+    width: 7px;
+    background: rgb(59, 59, 43);
+}
+
+#contenidoSeleccionado::-webkit-scrollbar-thumb{
+    background: #42863fad;
+    border-radius: 12px;
+}
