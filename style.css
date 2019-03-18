@@ -125,3 +125,57 @@ top: -55px;
     background: #42863fad;
     border-radius: 12px;
 }
+
+
+@media (max-width: 846px) {
+    body{
+        background-image: url('ae19d88a6ca2854c4f4e73e1d29608b4.jpg');
+        width: 100%;
+        overflow-y: scroll;
+    }
+
+    .contenido{
+        
+       top: 55px;
+       padding: 5px;
+       
+        background-color: black;
+        opacity: 0.81;
+        margin: 5px;
+    }
+    
+    .contenido h1{
+        font-size: 25px;
+    }
+
+    .intel{
+        position: absolute;
+        top: 145px;
+        left: 0px;
+        color: azure;
+        background-color: black;
+        opacity: 0.85;
+        font-family: 'Press Start 2P', cursive;
+        padding: 5px;
+    }
+
+    .videoYoutube{
+        display: none;
+    }
+
+    .menu{
+        top: 75px;
+        z-index: 99;
+    }
+
+    #contenidoSeleccionado{
+       position: absolute;
+        top: 410px;
+        left: 0px;
+        width: 100%;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        text-align: center;
+    }
+
+}
