@@ -110,7 +110,7 @@ top: -55px;
     top: 315px;
     left: 28px;
     width: 500px;
-    height: 220px;
+    height: 250px;
     overflow-y: scroll;
     font-family: 'Ubuntu Mono', monospace;
     text-align: center;
@@ -133,16 +133,6 @@ top: -55px;
         width: 100%;
         overflow-y: scroll;
     }
-    
-    .redes{
-   position: absolute;
-   font-size: 35px;
-   right: -5px;
-   top: 5px;
-    color: azure;
-    
-    z-index: 99;
-}
 
     .contenido{
         
