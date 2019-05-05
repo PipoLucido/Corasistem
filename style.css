@@ -126,6 +126,13 @@ top: -55px;
     border-radius: 12px;
 }
 
+.robotGif{
+    width: 400px;
+}
+
+.ilonImg{
+    width: 400px;
+}
 
 @media (max-width: 846px) {
     body{

@@ -2,7 +2,7 @@
 var aText = new Array(
     "Profundo analisis desde un punto de vista Filosofico",
     "sobre la regulacion cientifica en puntos criticos de las",
-    "tecnicas humanas y el desarollo que estas impulsan." 
+    "tecnicas humanas y el desarrollo que estas impulsan." 
     
     );
     var iSpeed = 50;
@@ -64,7 +64,7 @@ var aText = new Array(
 
      
 
-     document.getElementById('contenidoSeleccionado').innerHTML = "<div id='tituloArticulo' style='display: block;'> <h1>UNA EFECTIVA TOMA DE DECISIONES</h1><br> <p>El gran nerd-rockstart del momento Elon Musk dijo una vez 'El primer paso es establecer que algo es posible, entonces es probable que ocurra' y es justa esa idea lo que quiero expresar en este articulo. Las probabilidades de que una decision sea la correcta o no. Como podemos saber si una decision es correcta? Existe una formula magica? La tecnica humana logro establecer alguna manera de lograr una estimacion para mejorar la toma de deciciones? La respuesta a todo esto es si.</p> <img src='https://cdn.cnn.com/cnnnext/dam/assets/190319135617-20190319-elon-musk-2-large-169.jpg' alt='Elon'> <br><br> </div>";
+     document.getElementById('contenidoSeleccionado').innerHTML = "<div id='tituloArticulo' style='display: block;'> <h1>UNA EFECTIVA TOMA DE DECISIONES</h1><br> <p>El gran nerd-rockstart del momento Elon Musk dijo una vez 'El primer paso es establecer que algo es posible, entonces es probable que ocurra' y es esa idea la que se tratara en este articulo.  Las probabilidades de que la toma de una decision sea la correcta o no.  Como podemos saber si una decision es correcta? Existe una formula magica? La tecnica humana logro establecer alguna manera de lograr una estimacion para mejorar la toma de deciciones? La respuesta a todo esto es si.</p> <img class='ilonImg' src='https://cdn.cnn.com/cnnnext/dam/assets/190319135617-20190319-elon-musk-2-large-169.jpg' alt='Elon'> <br><br><p>En estos últimos años la tecnología avanzo lo suficiente como para entrenar a una inteligencia artificial y ganar al aledres en un 100% de probabilidades, haciendo un proceso interno, este robot determina cuáles son las posibilades más eficiente de seguir una jugada u otra. Aplicando este método a el análisis de datos que hacen las empresas al hacer estimaciones de ganancias, perdidas, puntos críticos con algoritmos de estadistica tomando los datos de todo un año o varios, cualquier software con un fin estadistico incrementaría sus posibilidades de éxito en soluciones ante problemas complejos con muchas variables.</p> <br> <img class='robotGif' src='https://media.giphy.com/media/ZDcDv9uWLxnkA/giphy.gif' alt='robot'> <br><br><p>Teniendo los datos correctos, uno podría construir su propio 'Sombrero seleccionador'(haciendo referencia al personaje de la franquicia Harry Potter), para determinar cuál es la decisión correcta ante un problema complejo, asegurando así el éxito de la decisión tomada.</p> </div>";
 
      document.getElementById('2018Focus').innerHTML = "2018";
 
