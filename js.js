@@ -56,6 +56,8 @@ var aText = new Array(
      document.getElementById('2018Focus').innerHTML = "> 2018";
      document.getElementById('2019Focus').innerHTML = "2019";
 
+     document.getElementById('contenidoSeleccionado').scrollTop = 0;
+
     }
 
     function dosDiesicinueve(){
@@ -70,6 +72,7 @@ var aText = new Array(
 
      document.getElementById('2019Focus').innerHTML = " > 2019";
 
+     document.getElementById('contenidoSeleccionado').scrollTop = 0;
 
      }
 
