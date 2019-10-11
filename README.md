@@ -1,4 +1,4 @@
-# Corasystem
+# CoraSystem
 PROYECTOS PERSONALES 
 
 SOFTWARE Y HARDWARE !!!
