@@ -1,110 +1,207 @@
-body,
-html {
-    margin: 0;
-    padding: 0;
-    background-color: black!important;
+body{
+    margin:0;
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
-.contenido {
+
+.videoFondo{
+position: absolute;
+width: 100%;
+top: -55px;
+}
+
+.contenido{
+    position: absolute;
+   
     color: azure;
     font-family: 'Press Start 2P', cursive;
-    padding: 15px;
+   padding: 15px;
+   
     background-color: black;
     opacity: 0.81;
     margin: 25px;
-    text-align: center;
 }
 
-.contenido h1 {
-    overflow: hidden;
-    white-space: nowrap;
-    animation: typing 2.0s steps(40, end), blink-caret .4s step-end infinite;
+.contenido h1{
+    overflow: hidden; 
+  border-right: .15em solid azure;
+  white-space: nowrap;
+  
+  
+    animation: 
+    typing 1.0s steps(40, end),
+    blink-caret .4s step-end infinite;
 }
 
 @keyframes typing {
-    from {
-        width: 0
-    }
-    to {
-        width: 100%
-    }
+    from { width: 0 }
+    to { width: 100% }
+}
+  
+  
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: azure; }
 }
 
-@keyframes blink-caret {
-    from,
-    to {
-        border-color: transparent
-    }
-    50% {
-        border-color: azure;
-    }
-}
-
-.intel {
-    top: 145px;
+.intel{
+    position: absolute;
+    top: 195px;
     left: 25px;
     color: azure;
     background-color: black;
     opacity: 0.85;
     font-family: 'Press Start 2P', cursive;
     padding: 5px;
-    text-align: center;
 }
 
-.content {
-    width: 1200px;
-    margin: 20px auto;
-    columns: 4;
-    column-gap: 30px;
-    font-family: 'Press Start 2P', cursive;
+.redes{
+   position: absolute;
+   font-size: 35px;
+   right: 15px;
+   top: 5px;
+    color: azure;
+    
+    z-index: 99;
 }
 
-.content .box {
-    width: 100%;
-    margin: 0 0 20px;
-    padding: 10px;
-    background-color: white;
-    overflow: hidden;
-    break-inside: avoid;
+.redes i{
+   padding-right:15px; 
+    opacity: 0.85;
     cursor: pointer;
 }
 
-.content .box img {
-    max-width: 100%!important;
+.redes i:hover{
+    opacity: 1;
 }
 
-.content .box h2 {
-    font-size: 12px;
-    margin: 10px 0 0;
-    padding: 0;
+.videoYoutube{
+    position: absolute;
+    bottom: 15px;
+    right: 25px;
+}
+
+.menu{
+    position: relative;
+    color: beige;
+    top: 15px;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.menu i{
+    position: relative;
+    color: beige;
+    top: 305px;
+    left: 25px;
+    font-family: 'Press Start 2P', cursive;
+    cursor: pointer;
+    opacity: 0.81;
+}
+
+.menu i:hover{
+    opacity: 1;
+    font-style: normal;
+}
+
+.fondoNegro{
+    background-color: black;
+    padding: 5px;
+    opacity: 0.85;
+}
+
+#contenidoSeleccionado{
+    position: relative;
+    color: beige;
+    top: 315px;
+    left: 28px;
+    width: 640px;
+    height: 250px;
+    overflow-y: scroll;
+    font-family: 'Ubuntu Mono', monospace;
     text-align: center;
-    font-weight: bold;
 }
 
-.content .box p {
-    font-size: 10px;
-    margin: 0;
-    padding: 0 0 10px;
-    text-align: center;
+#contenidoSeleccionado::-webkit-scrollbar{
+    width: 7px;
+    background: rgb(59, 59, 43);
 }
 
-@media (max-width:1200px) {
-    .content {
-        columns: 3;
-        width: calc (100% - 40px);
-        box-sizing: border-box;
-        padding: 20px 20px 20px 0;
+#contenidoSeleccionado::-webkit-scrollbar-thumb{
+    background: #42863fad;
+    border-radius: 12px;
+}
+
+.robotGif{
+    width: 350px;
+}
+
+.ilonImg{
+    width: 400px;
+}
+
+@media (max-width: 846px) {
+    body{
+        background-image: url('ae19d88a6ca2854c4f4e73e1d29608b4.jpg');
+        width: 100%;
+        height: 150%;
+        overflow-y: scroll;
     }
-}
+    
+    .redes{
+        position: absolute;
+       
+        
+        top: 5px;
+        left: 19%;
+         color: azure;
+         
+         z-index: 99;
+     }
 
-@media (max-width:768px) {
-    .content {
-        columns: 2;
+    .contenido{
+        
+       top: 60px;
+       width: 100%;
+       text-align: center;
+        background-color: black;
+        opacity: 0.81;
+        margin: 0;
     }
-}
+    
+    .contenido h1{
+        font-size: 25px;
+    }
 
-@media (max-width:480px) {
-    .content {
-        columns: 1;
+    .intel{
+        position: absolute;
+        top: 145px;
+        left: 0px;
+        color: azure;
+        background-color: black;
+        opacity: 0.85;
+        font-family: 'Press Start 2P', cursive;
+        padding: 5px;
     }
+
+    .videoYoutube{
+        display: none;
+    }
+
+    .menu{
+        top: 75px;
+        z-index: 99;
+    }
+
+    #contenidoSeleccionado{
+       position: absolute;
+        top: 410px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        text-align: center;
+    }
+
 }

@@ -1,84 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+    <script type="text/javascript">
+    if (document.addEventListener) { // IE >= 9; other browsers
+        document.addEventListener('contextmenu', function(e) {
+            
+            e.preventDefault();
+        }, false);
+    } else { // IE < 9
+        document.attachEvent('oncontextmenu', function() {
+            alert("You've tried to open context menu");
+            window.event.returnValue = false;
+        });
+    }
+</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="img/unnamed.png" type="image/x-icon" />
+    <link rel="icon" href="img/unnamed.png" type="image/x-icon"/>
     <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <title>CoraSystem [ I+D ]</title>
+    <title>Corasistem [ I+D ]</title>
 </head>
+<body onselectstart="return false">
+    <video class="videoFondo" autoplay muted="muted" loop src="videoBack.mp4"></video>
 
-<body>
-
-    <div class="contenido">
-        <h1>システムハート</h1>
-        <p>[ CoraSystem ]</p>
+    <div class="contenido" >
+              <h1>Corasistem </h1>
     </div>
 
     <div class="intel" id="typedtext"></div>
 
 
-    <div class="content">
+<p class="redes">
+    <i onClick="openTw()" class="fab fa-twitter"></i>
+    <i onClick="openFb()" class="fab fa-facebook"></i>
+    <i onClick="openLn()" class="fab fa-linkedin"></i>
+    <i onClick="openGh()"  class="fab fa-github-square"></i>
+</p>
 
+  <div class="menu" >
+    <p > <i class="fondoNegro"  id="2018Focus" onClick="dosDiesiciocho()">9/12/18</i> <i class="fondoNegro"  id="2019Focus" onClick="dosDiesicinueve()" >2/3/19</i> </p> 
+  </div>
 
-        <div class="box" onclick="openRay()">
-            <img src="img/raycast.gif" alt="img">
-            <h2>Algoritmos-REtro</h2>
-            <p>Proyecto de programacion sobre algoritmos retro usado en juegos de consolas clasicas. <br>Javascript,Assembly & C. </p>
-        </div>
-
-        <div class="box">
-            <img src="img/joy.jpg" alt="img">
-            <h2>Arcade-Stick</h2>
-            <p>Armado de Joystick estilo Arcade desde la placa hasta su comercializacion.</p>
-        </div>
-
-        <div class="box" onclick="openByron()">
-            <img src="img/HISTORIAS DESTACADAS-05.png" alt="img">
-            <h2>Byrons</h2>
-            <p>Agencia publicitaria donde soy programador web. Nos dedicamos a ofrecer servicios de comunity manager entre otros.</p>
-        </div>
-
-        <div class="box">
-            <img src="img/you.gif" alt="img">
-            <h2>YouTube-Channel</h2>
-            <p>Aun no disponible (no tengo tiempo , no se me cae una idea y no tengo plata para produccion) xD</p>
-        </div>
-
-
-
+  <div id="contenidoSeleccionado" class="fondoNegro" >
+      <p><i class="fas fa-exclamation-triangle"></i> Escoje una fecha y descubre algunos de los eventos importantes que sucedieron en la misma <i class="fas fa-exclamation-triangle"></i></p>
     </div>
 
+    
 
 
-
-
-
-
-
-    <script type="text/javascript" src="https://ssl.gstatic.com/trends_nrtr/1754_RC01/embed_loader.js"></script>
-    <script>
-        function openByron() {
-            window.open("https://agenciabyrons.com/");
-        }
-
-        function openRay() {
-
-            window.open("https://pipolucido.github.io/RAYCAST_Javascript/");
-        }
-    </script>
-
+<iframe class="videoYoutube" width="560" height="315" src="https://www.youtube.com/embed/M5h9fMFW_6k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" ></iframe>
     <script src="js.js">
+    
     </script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
-
 </html>
